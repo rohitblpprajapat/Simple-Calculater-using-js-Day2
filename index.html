@@ -22,7 +22,7 @@
        console.log(expression);
        if (expression){
         try {
-            answer = eval(expression);
+            answer = math.evaluate(expression);
             document.getElementById("expression").value = answer;
             addLog(expression + '=' + answer);
         } catch (e) {
