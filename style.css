@@ -4,27 +4,75 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-}
-
-.row {
+  }
+  
+  .row {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
-}
-
-.btn {
+  }
+  
+  .btn {
     width: 60px;
     height: 60px;
     margin: 0 5px;
     font-size: 24px;
+    
+    border: none;
+    border-radius: 50%;
+    background-color: #464399;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn.operator {
+    background-color: #ff8a65;
+    color: #fff;
+  }
+  
+  .btn.zero {
+    width: 120px;
+  }
+  
+  .btn.equal {
+    background-color: #64b5f6;
+    color: #fff;
+  }
+  
+  .btn:hover {
+    background-color: #ccc;
+    color: #333;
+  }
+
+  .input-box {
+    width: 400px;
+    height: 40px;
+    padding: 25px;
+    position: relative;
+    bottom: 10px;
+    font-size: 18px;
+    color: #464399;
+    border: 1px solid #464399;
+    border-radius: 10px;
+    outline: none;
 }
 
-.input-box {
-    width: 300px;
-    height: 50px;
+body {
+    margin-top: 80px;
+    background-image: url("bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page-header {
+    font-family: 'Nunito', sans-serif;
+    font-size: 90px;
     padding: 10px;
-    font-size: 18px;
-    border: 1px solid #ecebeb;
-    border-radius: 4px;
-    outline: none;
+    font-weight: 600;
+    color: #464399;
+    justify-content: center;
+    text-align: center;
+
 }
